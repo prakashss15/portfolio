@@ -41,28 +41,7 @@ export const projects: Project[] = [
     featured: true,
     note: "Built as part of a team project, extended from a shared team codebase.",
   },
-  {
-    slug: "mj-spectra-shield",
-    name: "Real-Time Deepfake Audio Detection",
-    subtitle: "CNN-based system for classifying live and uploaded audio as real or synthetic",
-    problem:
-      "Text-to-speech and voice-cloning technology can generate highly realistic synthetic audio, opening the door to impersonation, fraud, and misinformation — while most detection needs to work on both live streams and uploaded files, with results a person can actually trust.",
-    solution:
-      "This system extracts Log-Mel spectrogram features from audio and classifies them with a convolutional neural network, returning a confidence score alongside the real/fake verdict. It supports both live microphone input and pre-recorded file uploads, and pairs classification with explainability visualizations (Grad-CAM / saliency maps) so the decision isn't a black box.",
-    architecture:
-      "A React.js frontend communicates with a FastAPI backend that handles audio ingestion, preprocessing (librosa, NumPy, SciPy), spectrogram feature extraction, CNN inference, and explainability generation, returning a confidence-scored classification.",
-    tech: ["Python", "FastAPI", "React", "PyTorch", "CNN", "Librosa", "NumPy", "Grad-CAM"],
-    features: [
-      "Live microphone streaming and file-upload analysis",
-      "Log-Mel spectrogram feature extraction",
-      "Grad-CAM / saliency-based explainability",
-      "Confidence-scored real/fake classification",
-    ],
-    learned:
-      "This project reinforced the same audio-ML pipeline from a different angle — a FastAPI backend instead of Flask, and a stronger focus on presenting model confidence and explainability to the end user.",
-    github: "https://github.com/prakashss15/MJ-Spectra-Sheild",
-    featured: true,
-  },
+  
   {
     slug: "smart-logistics",
     name: "Smart Logistics",
@@ -118,19 +97,7 @@ export const projects: Project[] = [
     github: "https://github.com/prakashss15/Online-Quiz-System",
     featured: true,
   },
-  {
-    slug: "industrial-anomaly-detection",
-    name: "Industrial Anomaly Detection",
-    subtitle: "AI-integrated framework for industrial machine accident prediction",
-    problem:
-      "Manufacturing environments benefit from catching equipment anomalies before they turn into accidents or downtime.",
-    solution:
-      "An AI-integrated framework aimed at predicting industrial machine accidents using machine learning models, applied to manufacturing environments.",
-    tech: ["Machine Learning", "HTML"],
-    features: ["ML-based anomaly/accident prediction for industrial machinery"],
-    github: "https://github.com/prakashss15/industrial-anamoly-detection",
-    featured: false,
-  },
+  
 ];
 
 export const featuredProjects = projects.filter((p) => p.featured);
