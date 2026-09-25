@@ -78,6 +78,17 @@ export default function ProjectCard({
         >
           Code <ExternalLink size={13} />
         </a>
+        {project.demo && (
+          <a
+            href={project.demo}
+            target="_blank"
+            rel="noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="inline-flex items-center gap-1.5 text-sm text-fg-muted transition-colors hover:text-fg"
+          >
+            Live demo <ExternalLink size={13} />
+          </a>
+        )}
       </div>
     </motion.div>
   );
