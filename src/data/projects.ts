@@ -97,7 +97,24 @@ export const projects: Project[] = [
     github: "https://github.com/prakashss15/Online-Quiz-System",
     featured: true,
   },
-  
+  {
+    slug: "tony-stark-the-iron-legacy",
+    name: "Tony Stark — The Iron Legacy",
+    subtitle: "HUD-inspired digital portfolio concept themed around the Iron Man universe",
+    problem:
+      "A conventional portfolio layout doesn't capture the tone of a project meant to celebrate the Iron Man universe's technology and suit progression.",
+    solution:
+      "An interactive, HUD-inspired digital experience that walks through Iron Man's arc reactor tech and suit evolution with a heads-up-display aesthetic — built as a concept portfolio site rather than a functional application.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    features: [
+      "HUD-inspired interactive UI",
+      "Suit progression showcase",
+      "Iron Man universe technology theming",
+    ],
+    github: "https://github.com/prakashss15/Tony-Stark--The-Iron-Legacy",
+    demo: "https://tony-stark-the-iron-legacy.vercel.app/",
+    featured: true,
+  },
 ];
 
 export const featuredProjects = projects.filter((p) => p.featured);
@@ -110,13 +127,6 @@ export type MiniRepo = {
 };
 
 export const moreRepos: MiniRepo[] = [
-  {
-    name: "Tony-Stark--The-Iron-Legacy",
-    description:
-      "Interactive, HUD-inspired digital portfolio concept covering the technologies and suit progression from the Iron Man universe.",
-    language: "HTML",
-    github: "https://github.com/prakashss15/Tony-Stark--The-Iron-Legacy",
-  },
   {
     name: "QR-code-generator",
     description: "QR code generation utility for URLs.",
