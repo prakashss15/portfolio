@@ -6,7 +6,7 @@ export type SkillCategory = {
 export const skillCategories: SkillCategory[] = [
   {
     title: "Programming Languages",
-    skills: ["C++", "C", "Python", "JavaScript", "TypeScript"],
+    skills: ["C++", "Python", "JavaScript"],
   },
   {
     title: "Core Computer Science",
@@ -21,7 +21,7 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     title: "Backend & Frameworks",
-    skills: ["Flask", "Django", "FastAPI", "Socket.IO", "REST APIs", "SQLite"],
+    skills: ["Flask", "Django", "SQLite"],
   },
   {
     title: "AI / ML",

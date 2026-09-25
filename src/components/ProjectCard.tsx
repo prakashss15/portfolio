@@ -51,13 +51,13 @@ export default function ProjectCard({
         {project.tech.slice(0, 4).map((t) => (
           <span
             key={t}
-            className="rounded-full border border-border bg-white/[0.03] px-2.5 py-0.5 font-mono text-[11px] text-fg-muted"
+            className="rounded-full border border-border bg-subtle px-2.5 py-0.5 font-mono text-[11px] text-fg-muted"
           >
             {t}
           </span>
         ))}
         {project.tech.length > 4 && (
-          <span className="rounded-full border border-border bg-white/[0.03] px-2.5 py-0.5 font-mono text-[11px] text-fg-subtle">
+          <span className="rounded-full border border-border bg-subtle px-2.5 py-0.5 font-mono text-[11px] text-fg-subtle">
             +{project.tech.length - 4}
           </span>
         )}

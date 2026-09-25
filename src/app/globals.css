@@ -24,6 +24,17 @@
   --accent-2: #22d3ee;
 }
 
+:root.light {
+  --bg: #ffffff;
+  --bg-elevated: #f4f4f5;
+  --fg: #18181b;
+  --fg-muted: #52525b;
+  --fg-subtle: #71717a;
+  --border: #e4e4e7;
+  --accent: #4f46e5;
+  --accent-2: #0891b2;
+}
+
 * {
   border-color: var(--border);
 }
@@ -50,6 +61,15 @@ body {
   background: var(--bg);
   color: var(--fg);
   font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+:root.light {
+  color-scheme: light;
 }
 
 .bg-dot-grid {
@@ -57,8 +77,19 @@ body {
   background-size: 28px 28px;
 }
 
+:root.light .bg-dot-grid {
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.08) 1px, transparent 1px);
+}
+
 .gradient-text {
   background: linear-gradient(120deg, #a5b4fc, #67e8f9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+:root.light .gradient-text {
+  background: linear-gradient(120deg, #4f46e5, #0891b2);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -69,6 +100,43 @@ body {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+:root.light .glass {
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.bg-subtle {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+:root.light .bg-subtle {
+  background: rgba(0, 0, 0, 0.035);
+}
+
+.bg-subtle-2 {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+:root.light .bg-subtle-2 {
+  background: rgba(0, 0, 0, 0.045);
+}
+
+.bg-nav-pill {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+:root.light .bg-nav-pill {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.shadow-elevated {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -4px rgba(0, 0, 0, 0.2);
+}
+
+:root.light .shadow-elevated {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.08);
 }
 
 ::selection {

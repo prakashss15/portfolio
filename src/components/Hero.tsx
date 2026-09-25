@@ -116,8 +116,8 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="relative mx-auto w-full max-w-md"
         >
-          <div className="glass overflow-hidden rounded-2xl border border-border shadow-2xl shadow-black/40">
-            <div className="flex items-center gap-1.5 border-b border-border bg-white/[0.03] px-4 py-3">
+          <div className="glass overflow-hidden rounded-2xl border border-border shadow-2xl shadow-elevated">
+            <div className="flex items-center gap-1.5 border-b border-border bg-subtle px-4 py-3">
               <span className="h-2.5 w-2.5 rounded-full bg-red-400/70" />
               <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/70" />
               <span className="h-2.5 w-2.5 rounded-full bg-green-400/70" />

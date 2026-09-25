@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { GithubIcon } from "./icons";
 import { profile } from "@/data/profile";
+import ThemeToggle from "./ThemeToggle";
 
 const links = [
   { id: "home", label: "Home" },
@@ -63,7 +64,7 @@ export default function Navbar() {
         <nav
           className={`flex items-center justify-between rounded-2xl border px-4 transition-all duration-300 ${
             scrolled
-              ? "glass border-border py-2 shadow-lg shadow-black/20"
+              ? "glass border-border py-2 shadow-lg shadow-elevated"
               : "border-transparent py-3"
           }`}
         >
@@ -89,7 +90,7 @@ export default function Navbar() {
                   {active === link.id && (
                     <motion.span
                       layoutId="nav-active"
-                      className="absolute inset-0 rounded-full bg-white/8"
+                      className="absolute inset-0 rounded-full bg-nav-pill"
                       transition={{ type: "spring", stiffness: 400, damping: 32 }}
                     />
                   )}
@@ -109,6 +110,7 @@ export default function Navbar() {
             >
               <GithubIcon size={18} />
             </a>
+            <ThemeToggle />
             <button
               onClick={() => handleNavClick("contact")}
               className="rounded-full bg-fg px-4 py-1.5 text-sm font-medium text-bg transition-transform hover:scale-105"
@@ -117,14 +119,17 @@ export default function Navbar() {
             </button>
           </div>
 
-          <button
-            className="text-fg md:hidden"
-            aria-label="Toggle navigation menu"
-            aria-expanded={open}
-            onClick={() => setOpen((o) => !o)}
-          >
-            {open ? <X size={22} /> : <Menu size={22} />}
-          </button>
+          <div className="flex items-center gap-1 md:hidden">
+            <ThemeToggle />
+            <button
+              className="text-fg"
+              aria-label="Toggle navigation menu"
+              aria-expanded={open}
+              onClick={() => setOpen((o) => !o)}
+            >
+              {open ? <X size={22} /> : <Menu size={22} />}
+            </button>
+          </div>
         </nav>
 
         {open && (
@@ -140,7 +145,7 @@ export default function Navbar() {
                     onClick={() => handleNavClick(link.id)}
                     className={`block w-full rounded-lg px-3 py-2 text-left text-sm ${
                       active === link.id
-                        ? "bg-white/8 text-fg"
+                        ? "bg-nav-pill text-fg"
                         : "text-fg-muted"
                     }`}
                   >

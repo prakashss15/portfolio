@@ -63,7 +63,7 @@ export default function ProjectModal({
             <p className="mt-1 text-fg-muted">{project.subtitle}</p>
 
             {project.note && (
-              <p className="mt-3 rounded-lg border border-border bg-white/[0.03] px-3 py-2 text-xs text-fg-subtle">
+              <p className="mt-3 rounded-lg border border-border bg-subtle px-3 py-2 text-xs text-fg-subtle">
                 {project.note}
               </p>
             )}
@@ -81,7 +81,7 @@ export default function ProjectModal({
                   {project.tech.map((t) => (
                     <span
                       key={t}
-                      className="rounded-full border border-border bg-white/[0.03] px-2.5 py-0.5 font-mono text-[11px] text-fg-muted"
+                      className="rounded-full border border-border bg-subtle px-2.5 py-0.5 font-mono text-[11px] text-fg-muted"
                     >
                       {t}
                     </span>

@@ -35,7 +35,7 @@ export default function Coding() {
               className="group flex items-center justify-between rounded-2xl border border-border bg-bg-elevated p-6 transition-colors hover:border-fg-subtle/40"
             >
               <div className="flex items-center gap-3">
-                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/[0.04] text-accent-2">
+                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-subtle-2 text-accent-2">
                   <Code2 size={20} />
                 </span>
                 <div>
@@ -53,7 +53,7 @@ export default function Coding() {
               className="group flex items-center justify-between rounded-2xl border border-border bg-bg-elevated p-6 transition-colors hover:border-fg-subtle/40"
             >
               <div className="flex items-center gap-3">
-                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/[0.04] text-accent-2">
+                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-subtle-2 text-accent-2">
                   <GithubIcon size={20} />
                 </span>
                 <div>
