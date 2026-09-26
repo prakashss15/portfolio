@@ -64,7 +64,7 @@ export default function Navbar() {
         <nav
           className={`flex items-center justify-between rounded-2xl border px-4 transition-all duration-300 ${
             scrolled
-              ? "glass border-border py-2 shadow-lg shadow-elevated"
+              ? "glass-nav border-border py-2 shadow-lg shadow-elevated"
               : "border-transparent py-3"
           }`}
         >
@@ -136,7 +136,7 @@ export default function Navbar() {
           <motion.div
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
-            className="glass mt-2 rounded-2xl border border-border p-3 md:hidden"
+            className="glass-nav mt-2 rounded-2xl border border-border p-3 md:hidden"
           >
             <ul className="flex flex-col gap-1">
               {links.map((link) => (
