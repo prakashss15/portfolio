@@ -41,7 +41,7 @@ export const projects: Project[] = [
     featured: true,
     note: "Built as part of a team project, extended from a shared team codebase.",
   },
-  
+
   {
     slug: "smart-logistics",
     name: "Smart Logistics",
@@ -78,25 +78,7 @@ export const projects: Project[] = [
     github: "https://github.com/prakashss15/Factory-Management",
     featured: true,
   },
-  {
-    slug: "online-quiz-system",
-    name: "Online Quiz System",
-    subtitle: "Django platform for timed, auto-evaluated assessments",
-    problem:
-      "Instructors need a way to run timed assessments at scale, assign them to the right students, and get results back without manually grading every attempt.",
-    solution:
-      "A Django-based platform where instructors create timed quizzes, assign them by year/branch/section, and get automatic evaluation with leaderboards and per-student results. Students get randomized question order per attempt, optional access codes, and tab-switch detection to support test integrity.",
-    tech: ["Python", "Django", "SQLite"],
-    features: [
-      "Separate teacher and student authentication flows",
-      "Timed, auto-evaluated quiz attempts with randomized ordering",
-      "Leaderboards and individual result tracking",
-      "CSV export for instructors",
-      "Tab-switch detection during attempts",
-    ],
-    github: "https://github.com/prakashss15/Online-Quiz-System",
-    featured: true,
-  },
+
   {
     slug: "tony-stark-the-iron-legacy",
     name: "Tony Stark — The Iron Legacy",
@@ -144,17 +126,5 @@ export const moreRepos: MiniRepo[] = [
     description: "JavaScript project exploring web application development.",
     language: "JavaScript",
     github: "https://github.com/prakashss15/Qphi",
-  },
-  {
-    name: "resto01",
-    description: "TypeScript web application project.",
-    language: "TypeScript",
-    github: "https://github.com/prakashss15/resto01",
-  },
-  {
-    name: "djangolabs",
-    description: "Django framework practice and experiments.",
-    language: "Python",
-    github: "https://github.com/prakashss15/djangolabs",
   },
 ];
