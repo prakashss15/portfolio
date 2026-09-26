@@ -1,4 +1,5 @@
-import { Code2, Download } from "lucide-react";
+import { Code2, Download, MessageCircle } from "lucide-react";
+import Link from "next/link";
 import { GithubIcon, LinkedinIcon } from "./icons";
 import Reveal from "./Reveal";
 import { profile } from "@/data/profile";
@@ -21,6 +22,12 @@ export default function Contact() {
         </Reveal>
 
         <Reveal delay={0.1} className="mt-10 flex flex-wrap items-center justify-center gap-3">
+          <Link
+            href="/message"
+            className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-white transition-transform hover:scale-105"
+          >
+            <MessageCircle size={16} /> Message Me
+          </Link>
           <a
             href={profile.links.linkedin}
             target="_blank"
